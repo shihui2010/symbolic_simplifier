@@ -1,0 +1,31 @@
+{
+    "batch_size": 1,
+    "vocab_name": "Halide",
+    "n_var": 3,
+    "n_sample": 100,
+    "encoder_name": "Tree",
+    "decoder_name": "ProjAttTreeDecoder",
+    "encoder": {
+        "embed_size": 64,
+        "hidden_size": 32,
+        "num_layers": 1,
+        "output_size": 16,
+        "N": 3
+    },
+    "decoder": {
+        "embed_size": 64,
+        "hidden_size": 32,
+        "num_layers": 1,
+        "att_hidden_size": 16,
+        "proj_hidden_size": 16,
+        "N": 3
+    },
+    "rewriter_hidden_size": 8,
+    "hidden_unit_split": 16,
+    "share_embeddding": true,
+    "logdir": "training_log",
+    "l2_loss": true,
+    "l2_weight": 0.1,
+    "learning_rate": 1e-3,
+    "epsilon": 0.1
+}
